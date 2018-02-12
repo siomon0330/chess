@@ -1,0 +1,191 @@
+.chessboard{
+    width: 450px;
+    height: 450px;
+    display: block;
+    margin: auto
+}
+
+.chess{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    float: left;
+}
+.chess:before{ 
+    content: "";
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    top: 15px;
+    height: 1px;
+    background: #B7B7B7; 
+}
+
+.chess:after{ 
+    content: "";
+    position: absolute;
+    z-index: 2;
+    left: 15px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #B7B7B7; 
+}
+
+.chess.left:before{ 
+    left: 15px;
+    right: 0;
+    top: 15px;
+    height: 1px;
+}
+
+.chess.left:after{ 
+    left: 15px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+}
+
+.chess.right:before{ 
+    left: 0;
+    right: 15px;
+    top: 15px;
+    height: 1px;
+}
+
+.chess.right:after{ 
+    left: 15px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+}
+
+.chess.top:before{ 
+    left: 0;
+    right: 0;
+    top: 15px;
+    height: 1px;
+}
+
+.chess.top:after{ 
+    left: 15px;
+    top: 15px;
+    bottom: 0;
+    width: 2px;
+}
+
+.chess.bottom:before{ 
+    left: 0;
+    right: 0;
+    top: 15px;
+    height: 1px;
+}
+
+.chess.bottom:after{ 
+    left: 15px;
+    bottom: 15px;
+    width: 2px;
+}
+
+.chess.top.left:before{ 
+    left: 15px;
+    right: 0;
+    top: 15px;
+    height: 1px;
+}
+
+.chess.top.right:after{ 
+    left: 15px;
+    top: 15px;
+    bottom: 0;
+    width: 2px;
+}
+
+.chess.top.right:before{ 
+    left: 0;
+    right: 15px;
+    top: 15px;
+    height: 1px;
+}
+
+.chess.top.left:after{ 
+    left: 15px;
+    top: 15px;
+    bottom: 0;
+    width: 2px;
+}
+
+.chess.bottom.left:before{ 
+    left: 15px;
+    right: 0;
+    top: 15px;
+    height: 1px;
+}
+
+.chess.bottom.left:after{ 
+    left: 15px;
+    bottom: 15px;
+    width: 2px;
+}
+
+.chess.bottom.right:before{ 
+    left: 0;
+    right: 15px;
+    top: 15px;
+    height: 1px;
+}
+
+.chess.bottom.left:after{ 
+    left: 15px;
+    bottom: 15px;
+    width: 2px;
+}
+
+.active {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.active:before{
+    content: none;
+}
+
+.active:after{
+    content: none;
+}
+
+.black{
+    background: radial-gradient(white,black, black);
+}
+
+.white{
+    background: radial-gradient(white,  #cecccc, #cecccc);
+}
+
+
+#resultBtn {
+    display: none
+}
+      
+#mainBody{
+  margin-top: 1%
+}
+
+#mycanvas{
+  display: block;
+  margin: auto
+
+}
+
+#buttonGroup{
+  display: block;
+  text-align: center;
+  margin-bottom: 10px
+
+}
+
+.panel-heading{
+  text-align: center
+}
